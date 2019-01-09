@@ -1,0 +1,23 @@
+{
+  "name": "maraudersmap",
+  "version": "1.0.0",
+  "description": "A locator web app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Locator",
+    "Google",
+    "API",
+    "Bulma"
+  ],
+  "author": "Aravindan S",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "firebase-admin": "^6.4.0"
+  }
+}
