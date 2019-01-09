@@ -11,12 +11,15 @@ admin.initializeApp({
 });
 var db = admin.firestore();
 
-
 //Server Variable Init
 const app = exp();
 
 //ENV Variables
-var host = 'localhost';
+//var port = 3000;
+
+//Deployment Port Specification
+const PORT = process.env.PORT || 5000;
+
 
 //EJS Middleware Setup
 app.set('view engine','ejs');
@@ -41,6 +44,6 @@ app.get('/',function(req,res){
       } );
 });
 
-app.listen(3000,host,function(){
+app.listen(PORT,function(){
     console.log('Marauders Map server started at port 300 at ' + Date());
 });
